@@ -1,19 +1,20 @@
 #page title
-page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : Three Todo
 
 # App Info
 ios_app_id                                : 882164264                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+appstore_link                             : https://apps.apple.com/us/app/three-todo/id882164264
 playstore_link                            :                                           # Enter Google Play Store URL.
 presskit_download_link                    :                                           # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 
-app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_icon                                  : assets/appicon.jpg
+app_name                                  : Three Todo
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Made for procrastinations by procrastinators.  The refreshingly simple stress free Todo list.  THREE is designed to be a minimal task assitant that is non instrusive.  THREE isn't designed to keep you on top of every facet of your life.  Rather, it will slowly but surely change the course of your life and help point you in the right direction.
+app_tagline                               : Made for procrastinators, by procrastinators.
+app_description                           : A simple, stress-free todo list. THREE is a minimal task assistant that stays out of your way — three tasks at a time, with Done, Defer, and Drop.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -36,20 +37,16 @@ youtube_username                          :
 features                                  :
 
   - title                                 : Simple Todo List
-    description                           : Minimal task assistance that is non intrusive
+    description                           : A calm, non-intrusive list. Nothing extra.
     fontawesome_icon_name                 : magic
-    
-  - title                                 : Only Three Tasks at a time
-    description                           : Present only 3 tasks at a given time.  As you deal with them, we will keep track and tell you how you're doing.
+
+  - title                                 : Only Three Tasks
+    description                           : Three tasks at a time. As you deal with them, THREE keeps track and shows how you're doing.
     fontawesome_icon_name                 : list
 
   - title                                 : Three Actions
-    description                           : 3 ways to action a task - Done, Defer, and Drop.
+    description                           : Done, Defer, or Drop. Three ways to handle a task.
     fontawesome_icon_name                 : dice-three
-
-  - title                                 : # New Feature Title
-    description                           : # New Feature Description
-    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
 
 
 
