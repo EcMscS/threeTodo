@@ -35,26 +35,35 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <img class="appIconLarge" src="{{ site.app_icon | relative_url }}">
+                            <img class="appIconLarge" src="{{ site.app_icon | relative_url }}" alt="{{ site.app_name }}">
                         </div>
                         <div class="appNamePriceContainer">
                             <h1 class="appName">
                                 {{ site.app_name }}
                             </h1>
-                            <h2 class="appPrice">
-                                {{ site.app_price }}
-                            </h2>
+                            <p class="appPrice">{{ site.app_price }}</p>
                         </div>
                         <div class="appDescriptionContainer">
-                            <p class ="appDescription">
+                            {% if site.app_tagline %}
+                            <p class="appTagline">
+                                {{ site.app_tagline }}
+                            </p>
+                            {% endif %}
+                            <p class="appDescription">
                                 {{ site.app_description }}
                             </p>
                         </div>
                         <div class="downloadButtonsContainer">
                             {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
+                                <a class="playStoreLink" href="{{ site.playstore_link }}"><img class="playStore" src="{{ 'assets/playstore.png' | relative_url }}" alt="Get it on Google Play"></a>
                             {% endif %}
-                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
+                            {% assign store_link = site.appstore_link %}
+                            {% if store_link == nil or store_link == empty %}
+                                {% assign store_link = 'https://apps.apple.com/app/id' | append: site.ios_app_id %}
+                            {% endif %}
+                            <a class="appStoreLink" href="{{ store_link }}" aria-label="Download {{ site.app_name }} on the App Store">
+                                <img class="appStore" src="{{ 'assets/appstore.png' | relative_url }}" alt="Download on the App Store">
+                            </a>
                         </div>
                     </div>
                     {% include features.html %}

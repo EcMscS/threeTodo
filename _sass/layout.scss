@@ -282,12 +282,23 @@ nav > ul li a:active {
 
 .appName {
 	color: $app-title-color;
+	font-size: 3.4rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.15;
 }
 
 .appPrice {
 	color: $app-price-color;
 	font-weight: normal;
-	margin-top: 13px;
+	margin-top: 8px;
+	font-size: 1.8rem;
+	opacity: 0.85;
+}
+
+.appPrice:empty {
+	display: none;
+	margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -312,31 +323,79 @@ nav > ul li a:active {
 } 
 
 .appDescriptionContainer {
-	font-size: 2.5rem;
+	font-size: 1.9rem;
 	font-weight: normal;
 	width: 100%;
+	max-width: 34em;
 	align-items: flex-start;
-	margin-top: 45px;
+	margin-top: 36px;
 	flex: 0 1 auto;
-	line-height: 1.5;
+	line-height: 1.55;
+}
+
+.appTagline {
+	color: $app-description-color;
+	font-size: 2.2rem;
+	font-weight: 600;
+	letter-spacing: -0.015em;
+	line-height: 1.35;
+	margin-bottom: 14px;
 }
 
 .appDescription {
 	color: $app-description-color;
+	opacity: 0.92;
 }
 
 @media only screen and (max-width: 992px) {
 
+	.appDescriptionContainer {
+		max-width: 36em;
+		font-size: 1.8rem;
+		margin-top: 28px;
+	}
+
+	.appTagline,
 	.appDescription {
 		text-align: center;
 	}
 	
 } 
 
+@media only screen and (max-width: 768px) {
+
+	.appName {
+		font-size: 3rem;
+	}
+
+	.appTagline {
+		font-size: 2rem;
+	}
+
+	.appDescriptionContainer {
+		font-size: 1.7rem;
+	}
+
+}
+
 .downloadButtonsContainer {
 	display: inline-block;
-	margin-top: 42px;
+	margin-top: 36px;
 	filter: $drop-shadow;
+}
+
+.appStoreLink,
+.playStoreLink {
+	display: inline-block;
+	transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.appStoreLink:hover,
+.appStoreLink:focus-visible,
+.playStoreLink:hover,
+.playStoreLink:focus-visible {
+	transform: translateY(-1px);
+	opacity: 0.92;
 }
 
 @media only screen and (max-width: 992px) {
@@ -479,12 +538,12 @@ nav > ul li a:active {
 	justify-content: flex-start;
 	flex-grow: 1;
 	flex-wrap: wrap;
-	margin-top: 93px;
+	margin-top: 80px;
 }
 
 .feature {
 	display: flex;
-	padding-top: 63px;
+	padding-top: 48px;
 	padding-left: 15px;
 	padding-right: 15px;
 	width: calc(100%/3);
@@ -524,12 +583,14 @@ nav > ul li a:active {
 
 .featureText > h3 {
 	color: $feature-title-color;
+	font-weight: 600;
+	line-height: 1.3;
 }
 
 .featureText > p {
 	color: $feature-text-color;
-	margin-top: 8px;
-	line-height: 1.5;
+	margin-top: 10px;
+	line-height: 1.55;
 }
 
 @media only screen and (max-width: 992px) {
