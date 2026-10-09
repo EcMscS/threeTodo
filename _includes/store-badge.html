@@ -1,0 +1,10 @@
+{% assign store_link = site.appstore_link %}
+{% if store_link == nil or store_link == empty %}
+	{% assign store_link = 'https://apps.apple.com/app/id' | append: site.ios_app_id %}
+{% endif %}
+<div class="store {{ include.class }}">
+	<p class="store-price" data-app-price>{% if site.app_price and site.app_price != empty %}{{ site.app_price }}{% else %}{% endif %}</p>
+	<a class="store-link" href="{{ store_link }}" data-app-store-link aria-label="Download {{ site.app_name }} on the App Store">
+		<img class="store-badge" src="{{ '/assets/appstore.png' | relative_url }}" alt="Download on the App Store" width="180" height="60">
+	</a>
+</div>

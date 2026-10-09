@@ -1,18 +1,33 @@
 # Three Todo
 
-THREE:  Made for procrastinators by procrastinators. The Refreshingly Simple Stress Free Todo List. 
-
-THREE is designed to be a minimal task assistant that is non intrusive.  Traditional todo lists add stress and complexity by making YOU track, categorize, and prioritize tasks.  They're digital task masters that nag and confuse you until you give up in frustration.  They punish you with incessant notifications when you're overdue on a task (which you would probably ignore anyways).
-
-THREE changes the way you manage tasks.  Tasks go in.  THREE will present you with three and only three tasks at any given time.  As you deal with them, we'll keep track and tell you how you're doing.  
-
-There are only three ways to action a task - Done, Defer, or Drop.  When you are done with a task, it falls off your list.  If you make a mistake - don't sweat it.  Next time the task you entered erroneously appears in the list , just Drop it - we won't hold it against you.   If you're looking at a task that you just don't want to deal with, Defer it.  This tells us that a particular task is unpleasant and it gets prioritized lower.  
-
-THREE isn't designed to keep you on top of every facet of your life.  No meaningless trophies or achievements.  Rather, THREE will slowly but surely change the course of your life and help point you in the right direction by keeping track of the stuff that matters to you and presenting them to you in a manageable fashion.  
-
-THREE:  Made for procrastinators by procrastinators.
+Made for procrastinators, by procrastinators. A calm todo list: three tasks at a time, each with Done, Defer, or Drop.
 
 ## Links
+
 - [Three Todo](https://ecmscs.github.io/threeTodo/)
 - [Privacy Policy](https://ecmscs.github.io/threeTodo/privacypolicy/)
+- [What's New](https://ecmscs.github.io/threeTodo/changelog/)
+- [App Store](https://apps.apple.com/us/app/three-todo/id882164264)
 
+## v3 screenshots
+
+Real v3 captures replace the dashed placeholders on the home page. Put them in [`assets/screenshots/`](assets/screenshots/) with these names:
+
+| File | Shows | Size |
+|---|---|---|
+| `iphone-main.png` | iPhone · Your three | 1170 × 2532 |
+| `iphone-notes.png` | iPhone · card flip / notes | 1170 × 2532 |
+| `iphone-queue.png` | iPhone · Up next / Your story | 1170 × 2532 |
+| `watch.png` | Apple Watch | 396 × 484 |
+| `iphone-duo.png` | iPhone Duo / foldable open | 2048 × 1408 |
+
+See `assets/screenshots/README.md` for capture notes. Price continues to come from the App Store lookup API — do not hardcode it.
+
+## Local preview
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+The site is a GitHub Pages project, so it serves at `http://127.0.0.1:4000/threeTodo/`.

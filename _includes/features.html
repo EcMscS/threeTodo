@@ -1,26 +1,54 @@
-<div class="features">
+<section class="band" id="around">
+	<div class="band-copy">
+		<p class="eyebrow">Around your three</p>
+		<h2>The rest waits. Your story stays.</h2>
+		<p>Three Todo is not a general task manager. Queue, history, and notes exist to protect the three — not to grow past them.</p>
+	</div>
+	<ul class="feature-grid">
+		<li class="feature-card">
+			<h3>Up next</h3>
+			<p>Everything beyond the three waits in the queue. When a slot opens, the top item promotes itself. No manual shuffle.</p>
+		</li>
+		<li class="feature-card">
+			<h3>Your story</h3>
+			<p>History keeps what you finished, deferred, or dropped. A quiet record — not a scoreboard.</p>
+		</li>
+		<li class="feature-card">
+			<h3>Dropped</h3>
+			<p>Letting go is a first-class action. Dropped tasks have their own place, so they don’t haunt the list.</p>
+		</li>
+		<li class="feature-card">
+			<h3>Notes on the back</h3>
+			<p>Double-tap a card to flip it. Notes live on the reverse, with when it was added and how often you’ve deferred it.</p>
+		</li>
+	</ul>
+</section>
 
-    {% for feature in site.features %}
-
-    {% if feature.title %}
-    <div class="feature">
-        <div>
-            <span class="fa-stack fa-1x">
-                <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
-            </span>
-        </div>
-        <div class="featureText">
-            <h3>
-                {{ feature.title }}
-            </h3>
-            <p>
-                {{ feature.description }}
-            </p>
-        </div>
-    </div>
-    {% endif %}
-
-    {% endfor %}
-
-</div>
+<section class="band" id="everywhere">
+	<div class="band-copy">
+		<p class="eyebrow">On every screen</p>
+		<h2>The same three, wherever you are.</h2>
+	</div>
+	<ul class="feature-grid">
+		<li class="feature-card">
+			<h3>iCloud sync</h3>
+			<p>Your three, your queue, and your story stay in step across iPhone, iPad, and Apple Watch.</p>
+		</li>
+		<li class="feature-card">
+			<h3>Apple Watch</h3>
+			<p>A redesigned Watch app for a glance at your three — and the same Done, Defer, and Drop.</p>
+		</li>
+		<li class="feature-card">
+			<h3>iPhone Duo &amp; foldables</h3>
+			<p>The layout adapts when a foldable or iPhone Duo is open, so the three still read as three.</p>
+		</li>
+		<li class="feature-card">
+			<h3>Siri &amp; Shortcuts</h3>
+			<p>Say “Add Task” or “Show my three.” The constraint holds, even when your hands are full.</p>
+		</li>
+		<li class="feature-card">
+			<h3>How it works</h3>
+			<p>A short tutorial lives in the app, so the gestures are clear before you swipe the first card.</p>
+		</li>
+	</ul>
+</section>

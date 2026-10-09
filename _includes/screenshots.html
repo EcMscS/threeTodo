@@ -1,0 +1,58 @@
+<section class="band" id="screens">
+	<div class="band-copy">
+		<p class="eyebrow">The app</p>
+		<h2>v3 screens, coming before submit.</h2>
+		<p>Real captures will replace these frames. Drop the files into <code>assets/screenshots/</code> using the names on each placeholder — no markup changes required.</p>
+	</div>
+	<div class="shot-grid">
+		{% include screenshot.html
+			file="iphone-main.png"
+			ratio="iphone"
+			width="1170"
+			height="2532"
+			label="iPhone main screen"
+			hint="Your three — three equal Paper cards, Add task at the bottom."
+			alt="Three Todo on iPhone: Your three with three equal task cards."
+			caption="iPhone · Your three" %}
+
+		{% include screenshot.html
+			file="iphone-notes.png"
+			ratio="iphone"
+			width="1170"
+			height="2532"
+			label="Card flip / notes"
+			hint="A card flipped to the notes face after a double-tap."
+			alt="Three Todo on iPhone: a task card flipped to show notes."
+			caption="iPhone · Notes" %}
+
+		{% include screenshot.html
+			file="iphone-queue.png"
+			ratio="iphone"
+			width="1170"
+			height="2532"
+			label="Queue / history"
+			hint="Up next or Your story — queue rows and the history list."
+			alt="Three Todo on iPhone: the queue (Up next) or history (Your story)."
+			caption="iPhone · Up next / Your story" %}
+
+		{% include screenshot.html
+			file="watch.png"
+			ratio="watch"
+			width="396"
+			height="484"
+			label="Apple Watch"
+			hint="Redesigned Watch app showing the three, or a single focused card."
+			alt="Three Todo on Apple Watch."
+			caption="Apple Watch" %}
+
+		{% include screenshot.html
+			file="iphone-duo.png"
+			ratio="duo"
+			width="2048"
+			height="1408"
+			label="iPhone Duo / foldable open"
+			hint="Adaptive layout with the device unfolded. The three should still read as three."
+			alt="Three Todo on an open iPhone Duo or foldable."
+			caption="iPhone Duo · open" %}
+	</div>
+</section>
