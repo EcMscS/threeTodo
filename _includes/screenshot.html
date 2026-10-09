@@ -1,0 +1,21 @@
+{% assign shot_path = '/assets/screenshots/' | append: include.file %}
+{% assign shot = nil %}
+{% for f in site.static_files %}
+	{% if f.path == shot_path %}
+		{% assign shot = f %}
+	{% endif %}
+{% endfor %}
+
+<figure class="shot shot--{{ include.ratio | default: 'iphone' }}">
+	{% if shot %}
+		<img src="{{ shot.path | relative_url }}" alt="{{ include.alt }}" width="{{ include.width }}" height="{{ include.height }}">
+	{% else %}
+		<div class="shot-placeholder" role="img" aria-label="v3 screenshot placeholder: {{ include.label }}. {{ include.hint }}">
+			<span class="shot-kicker">v3 screenshot placeholder</span>
+			<span class="shot-label">{{ include.label }}</span>
+			<span class="shot-hint">{{ include.hint }}</span>
+			<span class="shot-file">{{ include.file }}</span>
+		</div>
+	{% endif %}
+	<figcaption>{{ include.caption }}</figcaption>
+</figure>
