@@ -276,13 +276,26 @@ code {
 
 .illust-stage {
 	background: linear-gradient(180deg, var(--bg-top), var(--bg-bot));
-	border: 1px solid var(--border);
+	border: 1.5px dashed rgba(44, 42, 40, 0.2);
 	border-radius: var(--radius);
-	box-shadow: var(--sh-f);
+	box-shadow: var(--sh);
 	padding: 18px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+}
+
+.illust-badge {
+	align-self: flex-start;
+	font-size: 0.68rem;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--t2);
+	background: var(--surf);
+	border: 1px solid var(--border);
+	border-radius: 100px;
+	padding: 4px 8px;
 }
 
 .illust-nav {
@@ -298,6 +311,10 @@ code {
 	border-radius: 14px;
 	background: var(--surf);
 	border: 1px solid var(--border);
+	color: var(--t1);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .illust-day {
@@ -728,6 +745,23 @@ code {
 
 	.hero {
 		padding-top: 28px;
+	}
+
+	.illust-stage {
+		padding: 14px;
+		gap: 8px;
+	}
+
+	.illust-card {
+		padding: 14px 16px 12px;
+	}
+
+	.illust-card--lead .illust-title {
+		font-size: 1.1rem;
+	}
+
+	.illust-title {
+		font-size: 1.02rem;
 	}
 
 	.store-badge {
